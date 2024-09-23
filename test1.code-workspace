@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"lv_demos.h": "c",
+			"lv_demo_keypad_encoder.h": "c",
+			"lv_demo_benchmark.h": "c",
+			"esp-bsp.h": "c",
+			"esp32_s3_eye.h": "c"
+		}
+	}
+}

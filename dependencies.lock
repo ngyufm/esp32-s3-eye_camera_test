@@ -1,0 +1,95 @@
+dependencies:
+  esp_lvgl_port:
+    dependencies: []
+    source:
+      path: C:\Users\jojoj\Desktop\esp32-s3-eye_test\test1\components\esp_lvgl_port
+      type: local
+    version: 2.3.1
+  espressif/button:
+    component_hash: c3ee3ba339a3848977496d0157008ae574a24fc59f54d27c93ab51b14446a2fb
+    dependencies:
+    - name: espressif/cmake_utilities
+      registry_url: https://components.espressif.com/
+      require: private
+      version: 0.*
+    - name: idf
+      require: private
+      version: '>=4.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 3.3.1
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.5.3
+  espressif/esp32-camera:
+    component_hash: 154da98781f3ee98f6dbbdd3aaec97497051fb1a570c300fc0fd3a946874a02e
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.0.12
+  espressif/esp32_s3_eye:
+    component_hash: 706d0c459ebc1202657f53c2c75f377b7fcfcf2d38667a5ab88af5a60e6666e9
+    dependencies:
+    - name: espressif/button
+      registry_url: https://components.espressif.com/
+      require: public
+      version: '>=2.5,<4.0'
+    - name: espressif/esp32-camera
+      registry_url: https://components.espressif.com/
+      require: public
+      version: ^2.0.2
+    - name: espressif/esp_codec_dev
+      registry_url: https://components.espressif.com/
+      require: public
+      version: ^1,<1.2
+    - name: espressif/esp_lvgl_port
+      registry_url: https://components.espressif.com/
+      require: public
+      version: ^2
+    - name: idf
+      require: private
+      version: '>=4.4.5'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32s3
+    version: 3.1.0~1
+  espressif/esp_codec_dev:
+    component_hash: 1a3a2e518cd8b52e8796ec393a4050977f8f113599056faf085a02a57e194f86
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.1.0
+  idf:
+    source:
+      type: idf
+    version: 5.3.0
+  lvgl/lvgl:
+    component_hash: 2409fdc84e9766d2a18afd84b051aef3f838348136cdb1c10ac2e8bcdb012bf6
+    dependencies: []
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 9.2.0
+direct_dependencies:
+- espressif/esp32_s3_eye
+- espressif/esp_lvgl_port
+- idf
+- lvgl/lvgl
+manifest_hash: a7273df391996fb5edb5bd898c01526f6a0844691f5339ba934a8ff3d851bb3e
+target: esp32s3
+version: 2.0.0
